@@ -19,15 +19,15 @@ const Navbar = () => {
           <Image
             src={logo}
             alt="company logo"
-            h={["53.25px", "53.25px", "53.25px", "25.06px", "25.06px"]}
-            w={["53.24px", "53.24px", "53.24px", "25.06px", "25.06px"]}
+            h={["28.25px", "53.25px", "53.25px", "25.06px", "25.06px"]}
+            w={["28.24px", "53.24px", "53.24px", "25.06px", "25.06px"]}
           />
           <Text
             color="#111822"
             fontStyle="normal"
             fontWeight="600"
-            fontSize={["55.2379px", "55.2379px", "55.2379px", "26px", "26px"]}
-            lineHeight={["55.2379px", "55.2379px", "55.2379px", "31px", "31px"]}
+            fontSize={["25.2379px", "55.2379px", "55.2379px", "26px", "26px"]}
+            lineHeight={["31.2379px", "55.2379px", "55.2379px", "31px", "31px"]}
             letterSpacing="-0.02em"
           >
             CreativeProxies
@@ -154,10 +154,10 @@ const Navbar = () => {
           </Text>
         </Flex>
         {/* Get Started link div */}
-        <Box display="flex" flexDir="row" gap="11px" p="10px">
+        <Box display="flex" flexDir="row" gap="5px" p="10px">
           <Flex
             py="10px"
-            px={["18.89px", "18.89px", "18.89px", "22px", "22px"]}
+            px={["10px", "18.89px", "18.89px", "22px", "22px"]}
             cursor={"pointer"}
             flexDir={"row"}
             justifyContent="center"
@@ -167,9 +167,9 @@ const Navbar = () => {
           >
             <Text
               color={"#FFFFFF"}
-              fontSize={["29.1024px", "29.1024px", "29.1024px", "16px", "16px"]}
+              fontSize={["15.1024px", "29.1024px", "29.1024px", "16px", "16px"]}
               fontWeight="600"
-              lineHeight={["35px", "35px", "35px", "19px", "19px"]}
+              lineHeight={["20px", "35px", "35px", "19px", "19px"]}
               letterSpacing="-0.02em"
               //   p="10px"
             >
@@ -183,8 +183,8 @@ const Navbar = () => {
             justifyContent="center"
             alignItems="center"
             background="rgba(7, 123, 255, 0.25)"
-            w="71px"
-            h="71px"
+            w="50px"
+            h="50px"
             borderRadius="8.52px"
           >
             <Image src={menu} alt="menu" w="33.64px" h="24.96px" />

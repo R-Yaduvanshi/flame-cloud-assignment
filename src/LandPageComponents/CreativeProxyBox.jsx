@@ -12,8 +12,8 @@ const CreativeProxyBox = () => {
         <Text
           fontStyle="normal"
           fontWeight="600"
-          fontSize={["40px", "40px", "40px", "16px", "16px"]}
-          lineHeight={["48px", "48px", "48px", "19px", "19px"]}
+          fontSize={["13px", "40px", "40px", "16px", "16px"]}
+          lineHeight={["21px", "48px", "48px", "19px", "19px"]}
           letterSpacing="-0.02em"
           textAlign="center"
           color="#111822"
@@ -29,8 +29,8 @@ const CreativeProxyBox = () => {
           color="#111822"
           fontStyle="normal"
           fontWeight="600"
-          fontSize={["86px", "86px", "86px", "56px", "56px"]}
-          lineHeight={["103px", "103px", "103px", "67px", "67px"]}
+          fontSize={["28px", "86px", "86px", "56px", "56px"]}
+          lineHeight={["41px", "103px", "103px", "67px", "67px"]}
           textAlign="center"
           letterSpacing="-0.02px"
           // mx={["100px", "100px", "100px", "600px", "60px"]}
@@ -47,8 +47,8 @@ const CreativeProxyBox = () => {
           color="#111822"
           fontStyle="normal"
           fontWeight="600"
-          fontSize={["40px", "40px", "40px", "22px", "22px"]}
-          lineHeight={["48px", "48px", "48px", "26px", "26px"]}
+          fontSize={["12px", "40px", "40px", "22px", "22px"]}
+          lineHeight={["18px", "48px", "48px", "26px", "26px"]}
           textAlign="center"
           style={{ opacity: "0.5" }}
           // ml={["91px", "91px", "91px", "91px", ""]}
@@ -73,11 +73,11 @@ const CreativeProxyBox = () => {
             flexDir={"row"}
             justifyContent={"center"}
             alignItems={"center"}
-            w={["460px", "460px", "460px", "222px", "222px"]}
-            h={["97.39px", "97.39px", "97.39px", "47px", "47px"]}
+            w={["200px", "460px", "460px", "222px", "222px"]}
+            h={["50.39px", "97.39px", "97.39px", "47px", "47px"]}
             background={"#077BFF"}
             borderRadius={[
-              "20.7207px",
+              "10.7207px",
               "20.7207px",
               "20.7207px",
               "10px",
@@ -90,8 +90,8 @@ const CreativeProxyBox = () => {
             <Text
               textAlign={"center"}
               fontStyle={"normal"}
-              fontSize={["37.2973px", "37.2973px", "37.2973px", "18px", "18px"]}
-              lineHeight={["45px", "45px", "45px", "22px", "22px"]}
+              fontSize={["12.2973px", "37.2973px", "37.2973px", "18px", "18px"]}
+              lineHeight={["18px", "45px", "45px", "22px", "22px"]}
               color="#FFFFFF"
             >
               Get Started
@@ -99,18 +99,18 @@ const CreativeProxyBox = () => {
             <Image
               src={arrow}
               alt="arrow"
-              w={["26.94px", "26.94px", "26.94px", "13px", "13px"]}
-              h={["19.68px", "19.68px", "19.68px", "9.5px", "9.5px"]}
+              w={["11.94px", "26.94px", "26.94px", "13px", "13px"]}
+              h={["15.68px", "19.68px", "19.68px", "9.5px", "9.5px"]}
             />
           </Box>
         </Box>
         <Box display="flex" justifyContent={"center"} mt={"22px"}>
           <Box
             background="rgba(0, 182, 122, 0.1)"
-            w={["460px", "460px", "460px", "222px", "222px"]}
-            h={["186.49px", "186.49px", "186.49px", "90px", "90px"]}
+            w={["200px", "460px", "460px", "222px", "222px"]}
+            h={["80.49px", "186.49px", "186.49px", "90px", "90px"]}
             borderRadius={[
-              "20.7207px",
+              "10.7207px",
               "20.7207px",
               "20.7207px",
               "10px",
