@@ -90,18 +90,54 @@ export const proxyData = [
 
 export const customersFeedback = [
   {
+    id: 1,
     name: "ECHO DZNS",
     desc: "“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante auctor velit, quis convallis tor et tellus.”",
     title: "Web Designer, CreativeProxies",
   },
   {
+    id: 2,
     name: "John Doe",
     desc: "“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante auctor velit, quis convallis tor et tellus.”",
     title: "Random Text, ABC",
   },
   {
+    id: 3,
     name: "ECHO DZNS",
     desc: "“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante auctor velit, quis convallis tor et tellus.”",
     title: "Random Text, ABC",
+  },
+];
+
+export const blogData = [
+  {
+    id: 1,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+  {
+    id: 2,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+  {
+    id: 3,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+  {
+    id: 4,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+  {
+    id: 5,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+  {
+    id: 6,
+    title: "Blog Title appear here",
+    category: "Category name here",
   },
 ];

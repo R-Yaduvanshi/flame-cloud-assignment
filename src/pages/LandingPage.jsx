@@ -4,6 +4,7 @@ import CreativeProxyBox from "../LandPageComponents/CreativeProxyBox";
 import Feature from "../LandPageComponents/Feature";
 import Pricing from "../LandPageComponents/Pricing";
 import CustomerLove from "../LandPageComponents/CustomerLove";
+import Blogs from "../LandPageComponents/Blogs";
 
 const LandingPage = () => {
   return (
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Feature />
       <Pricing />
       <CustomerLove />
+      <Blogs />
     </Box>
   );
 };
