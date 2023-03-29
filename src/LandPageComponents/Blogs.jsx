@@ -14,7 +14,7 @@ const Blogs = () => {
     <Container
       maxW="85%"
       px={["9", "9", "9", "9", "9"]}
-      mb="250px"
+      mb="120px"
       //   border={"1px"}
     >
       <Flex>
