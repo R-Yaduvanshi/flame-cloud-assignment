@@ -7,6 +7,11 @@ import featuer6 from "../assets/shield-tick.svg";
 import featuer7 from "../assets/trade.svg";
 import featuer8 from "../assets/flash.svg";
 
+import proxy1 from "../assets/3square.svg";
+import proxy2 from "../assets/lock.svg";
+import proxy3 from "../assets/dollar-square.svg";
+import proxy4 from "../assets/security-safe.svg";
+
 export const featureData = [
   {
     id: 1,
@@ -55,5 +60,28 @@ export const featureData = [
     Image: featuer8,
     title: "Feature No 8",
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies interdum eros non suscipit.",
+  },
+];
+
+export const proxyData = [
+  {
+    id: 1,
+    desc: "Lorem Ipsum Dolor Sit Amet Top",
+    image: proxy1,
+  },
+  {
+    id: 2,
+    desc: "Lorem Ipsum Dolor Sit Amet Top",
+    image: proxy2,
+  },
+  {
+    id: 3,
+    desc: "Lorem Ipsum Dolor Sit Amet Top",
+    image: proxy3,
+  },
+  {
+    id: 4,
+    desc: "Lorem Ipsum Dolor Sit Amet Top",
+    image: proxy4,
   },
 ];

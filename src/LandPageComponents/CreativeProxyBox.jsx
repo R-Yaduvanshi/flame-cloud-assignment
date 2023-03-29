@@ -1,12 +1,21 @@
-import { Box, Container, Flex, Image, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Container,
+  Flex,
+  Image,
+  SimpleGrid,
+  Text,
+} from "@chakra-ui/react";
 import React from "react";
 import arrow from "../assets/arrowright.svg";
-import star from "../assets/star.svg";
+import line from "../assets/line.svg";
 import star1 from "../assets/star2.svg";
-
+import Rating from "./Rating";
+import { proxyData } from "../utils/data";
 const CreativeProxyBox = () => {
   return (
-    <Container maxW="85%" borderBottom="1px">
+    <Container maxW="85%">
       <Box mt="95px" mb="54px">
         {/* Small Heading Text */}
         <Text
@@ -33,7 +42,6 @@ const CreativeProxyBox = () => {
           lineHeight={["41px", "103px", "103px", "67px", "67px"]}
           textAlign="center"
           letterSpacing="-0.02px"
-          // mx={["100px", "100px", "100px", "600px", "60px"]}
           ml={["10px", "10px", "10px", "60px", "60px"]}
           mr={["10px", "10px", "10px", "60px", "60px"]}
           mt="3px"
@@ -51,7 +59,6 @@ const CreativeProxyBox = () => {
           lineHeight={["18px", "48px", "48px", "26px", "26px"]}
           textAlign="center"
           style={{ opacity: "0.5" }}
-          // ml={["91px", "91px", "91px", "91px", ""]}
           ml="91px"
           mr="91px"
           mt="17px"
@@ -121,52 +128,13 @@ const CreativeProxyBox = () => {
             placeItems={"center"}
           >
             <Box>
+              {/* Star rating component */}
               <Box display={"flex"} justifyContent={"center"} gap="2.36px">
-                <Box
-                  display={"flex"}
-                  flexDir={"row"}
-                  w="28.31px"
-                  h="28.31px"
-                  background="#00B67A"
-                >
-                  <Image src={star} />
-                </Box>
-                <Box
-                  display={"flex"}
-                  flexDir={"row"}
-                  w="28.31px"
-                  h="28.31px"
-                  background="#00B67A"
-                >
-                  <Image src={star} />
-                </Box>
-                <Box
-                  display={"flex"}
-                  flexDir={"row"}
-                  w="28.31px"
-                  h="28.31px"
-                  background="#00B67A"
-                >
-                  <Image src={star} />
-                </Box>
-                <Box
-                  display={"flex"}
-                  flexDir={"row"}
-                  w="28.31px"
-                  h="28.31px"
-                  background="#00B67A"
-                >
-                  <Image src={star} />
-                </Box>
-                <Box
-                  display={"flex"}
-                  flexDir={"row"}
-                  w="28.31px"
-                  h="28.31px"
-                  background="#00B67A"
-                >
-                  <Image src={star} />
-                </Box>
+                <Rating />
+                <Rating />
+                <Rating />
+                <Rating />
+                <Rating />
               </Box>
               <Flex justifyContent="center" mt="8.41px">
                 <Text>Rated 4.5 on</Text>
@@ -176,6 +144,59 @@ const CreativeProxyBox = () => {
             </Box>
           </Box>
         </Box>
+        <Center mt={["72.4px", "72.4px", "72.4px", "54px", "54px"]}>
+          <Image src={line} />
+        </Center>
+
+        {/* Proxt container */}
+        <Container
+          maxW="100%"
+          mt={["54.67px", "54.67px", "54.67", "36.36px", "36.36px"]}
+          mb={["54.67px", "54.67px", "54.67", "138.36px", "138.36px"]}
+        >
+          <SimpleGrid
+            columns={["2", "2", "2", "4", "4"]}
+            row={["2", "2", "2", "1", "1"]}
+            spacing={["10px", "10px", "16px", "16px", "16px"]}
+          >
+            {proxyData.map((el) => {
+              return (
+                <Flex
+                  borderRadius={"5px"}
+                  bg="#D4EAE8"
+                  border={"1px solid rgba(255, 255, 255, 0.1)"}
+                  h={["145.84px", "145.84px", "145.84px", "95.28px", "95.28px"]}
+                  justifyContent={"center"}
+                  alignItems={"center"}
+                  gap="16px"
+                >
+                  <Box
+                    bgGradient="linear(135deg, #3BC9FB 0%, #42A6FB 100%)"
+                    w={["61.22px", "61.22px", "61.22px", "40px", "40px"]}
+                    h={["61.22px", "61.22px", "61.22px", "40px", "40px"]}
+                    borderRadius={["", "", "", "12.2449px", "12.2449px"]}
+                    display={"flex"}
+                    justifyContent={"center"}
+                    alignItems={"center"}
+                  >
+                    <Image src={el.image} w="24px" h="24px" />
+                  </Box>
+
+                  <Text
+                    color="#111822"
+                    fontWeight={"400"}
+                    fontSize={["10px", "10px", "12.5px", "14px", "14px"]}
+                    lineHeight={["12px", "12px", "14.5px", "22px", "22px"]}
+                    w="148px"
+                    h="44px"
+                  >
+                    {el.desc}
+                  </Text>
+                </Flex>
+              );
+            })}
+          </SimpleGrid>
+        </Container>
       </Box>
     </Container>
   );
