@@ -52,6 +52,7 @@ const Feature = () => {
               pb="22px"
               bg=" rgba(255, 255, 255, 0.01)"
               border={"1px solid rgba(255, 255, 255, 0.1)"}
+              key={el.id}
             >
               <Image src={el.Image} w="24px" h="24px" />
               <Text

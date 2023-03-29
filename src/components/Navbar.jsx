@@ -4,8 +4,13 @@ import logo from "../assets/logo.svg";
 import downIcon from "../assets/Icon_down.svg";
 import discord from "../assets/discord_logo.svg";
 import menu from "../assets/menu.svg";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleRoute = (route) => {
+    navigate(route);
+  };
   return (
     <Box w="100%">
       <Container
@@ -20,15 +25,16 @@ const Navbar = () => {
             src={logo}
             alt="company logo"
             h={["28.25px", "53.25px", "53.25px", "25.06px", "25.06px"]}
-            w={["28.24px", "53.24px", "53.24px", "25.06px", "25.06px"]}
+            onClick={() => handleRoute("/")}
           />
           <Text
             color="#111822"
             fontStyle="normal"
             fontWeight="600"
-            fontSize={["25.2379px", "55.2379px", "55.2379px", "26px", "26px"]}
+            fontSize={["25.2379px", "25.2379px", "25.2379px", "26px", "26px"]}
             lineHeight={["31.2379px", "55.2379px", "55.2379px", "31px", "31px"]}
             letterSpacing="-0.02em"
+            onClick={() => handleRoute("/")}
           >
             CreativeProxies
           </Text>
@@ -154,7 +160,14 @@ const Navbar = () => {
           </Text>
         </Flex>
         {/* Get Started link div */}
-        <Box display="flex" flexDir="row" gap="5px" p="10px">
+        <Box
+          display="flex"
+          flexDir="row"
+          gap="5px"
+          p="10px"
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
           <Flex
             py="10px"
             px={["10px", "18.89px", "18.89px", "22px", "22px"]}
@@ -164,6 +177,7 @@ const Navbar = () => {
             alignItems="center"
             bg="#077BFF"
             borderRadius={"5px"}
+            onClick={() => handleRoute("/proxy")}
           >
             <Text
               color={"#FFFFFF"}

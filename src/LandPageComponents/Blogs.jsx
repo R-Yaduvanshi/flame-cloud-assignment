@@ -84,7 +84,7 @@ const Blogs = () => {
           >
             {blogData.map((el) => {
               return (
-                <Flex flexDir={"column"}>
+                <Flex flexDir={"column"} key={el.id}>
                   <Box
                     h="221px"
                     background={"rgba(7, 123, 255, 0.1)"}

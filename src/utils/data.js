@@ -141,3 +141,27 @@ export const blogData = [
     category: "Category name here",
   },
 ];
+
+export const searchDataResult = [
+  {
+    id: 1,
+    ip: "8.8.8.8",
+    proxy: "192.68.0.0",
+    city: "New Delhi",
+    country: "INDIA",
+  },
+  {
+    id: 2,
+    ip: "1.1.1.1",
+    proxy: "192.68.0.0",
+    city: "Kolkata",
+    country: "INDIA",
+  },
+  {
+    id: 3,
+    ip: "8.8.8.8",
+    proxy: "192.68.0.0",
+    city: "Kathmandu",
+    country: "NEPAL",
+  },
+];

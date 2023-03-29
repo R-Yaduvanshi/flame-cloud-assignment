@@ -38,11 +38,12 @@ const Pricing = () => {
         sit amet mollis molestie.
       </Text>
       <Flex
-        flexDir={["column", "column", "row", "row", "row"]}
+        flexDir={["column", "column", "column", "row", "row"]}
         w="100%"
         alignItems={"stretch"}
         justifyContent={"space-between"}
         mt="99px"
+        gap="15px"
       >
         {/* Ist Pricing */}
         <Flex

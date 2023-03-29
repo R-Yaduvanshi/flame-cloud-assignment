@@ -31,7 +31,7 @@ const CustomerLove = () => {
       </Text>
       <SimpleGrid
         mt="34px"
-        columns={[1, 1, 2, 2, 3]}
+        columns={[1, 1, 1, 2, 3]}
         spacing={["28px", "28px", "10px", "18px", "18px"]}
       >
         {customersFeedback.map((el) => {
@@ -43,6 +43,8 @@ const CustomerLove = () => {
               background={"rgba(30, 30, 30, 0.01)"}
               borderRadius="5px"
               border="1px solid rgba(22, 209, 19, 0.5)"
+              key={el.id}
+              // border="1px"
             >
               <Flex
                 mb="19.1px"

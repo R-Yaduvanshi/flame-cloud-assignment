@@ -80,7 +80,7 @@ const CreativeProxyBox = () => {
             flexDir={"row"}
             justifyContent={"center"}
             alignItems={"center"}
-            w={["200px", "460px", "460px", "222px", "222px"]}
+            w={["250px", "250px", "250px", "222px", "222px"]}
             h={["50.39px", "97.39px", "97.39px", "47px", "47px"]}
             background={"#077BFF"}
             borderRadius={[
@@ -97,7 +97,7 @@ const CreativeProxyBox = () => {
             <Text
               textAlign={"center"}
               fontStyle={"normal"}
-              fontSize={["12.2973px", "37.2973px", "37.2973px", "18px", "18px"]}
+              fontSize={["28.2973px", "28.2973px", "28.2973px", "28px", "18px"]}
               lineHeight={["18px", "45px", "45px", "22px", "22px"]}
               color="#FFFFFF"
             >
@@ -112,10 +112,11 @@ const CreativeProxyBox = () => {
           </Box>
         </Box>
         <Box display="flex" justifyContent={"center"} mt={"22px"}>
+          {/* Rating component */}
           <Box
             background="rgba(0, 182, 122, 0.1)"
-            w={["200px", "460px", "460px", "222px", "222px"]}
-            h={["80.49px", "186.49px", "186.49px", "90px", "90px"]}
+            w={["250px", "250px", "250px", "222px", "222px"]}
+            h={["140.49px", "140.49px", "140.49px", "90px", "90px"]}
             borderRadius={[
               "10.7207px",
               "20.7207px",
@@ -169,6 +170,7 @@ const CreativeProxyBox = () => {
                   justifyContent={"center"}
                   alignItems={"center"}
                   gap="16px"
+                  key={el.id}
                 >
                   <Box
                     bgGradient="linear(135deg, #3BC9FB 0%, #42A6FB 100%)"
