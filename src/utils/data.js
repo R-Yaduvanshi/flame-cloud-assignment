@@ -85,3 +85,23 @@ export const proxyData = [
     image: proxy4,
   },
 ];
+
+// Custome feedback data
+
+export const customersFeedback = [
+  {
+    name: "ECHO DZNS",
+    desc: "“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante auctor velit, quis convallis tor et tellus.”",
+    title: "Web Designer, CreativeProxies",
+  },
+  {
+    name: "John Doe",
+    desc: "“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante auctor velit, quis convallis tor et tellus.”",
+    title: "Random Text, ABC",
+  },
+  {
+    name: "ECHO DZNS",
+    desc: "“Integer facilisis metus magna, non eleifend est ultricies sit amet. Aliquam vehicula, orci non hendrerit pretium, nibh ante auctor velit, quis convallis tor et tellus.”",
+    title: "Random Text, ABC",
+  },
+];
