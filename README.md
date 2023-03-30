@@ -4,7 +4,11 @@
 <br/>
 
 <h4 align="center">Deployed On:</h4>
+<<<<<<< HEAD
 <p>
+=======
+<p align="center">
+>>>>>>> e0132f68d836ef18f742e7b265f98b181e2294d4
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoLBdU99Oft-4qMU_nxytKrdjO-qovV1PEw&usqp=CAU"/>
 </p>
 
@@ -25,8 +29,6 @@
 </p>
 
 <br/>
-<p align="center">Some Screenshot of my project </p>
-
 ## Getting Started
 
 This project was built using React, TypeScript, Chakra UI, HTML, CSS, JavaScript, Rest API . It is an Task-Palnner web application and for running on your local environment you should follow these guidelines.
