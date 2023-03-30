@@ -75,9 +75,7 @@ const ProxyLocationPage = () => {
       <Textarea
         mb="42.6px"
         w={["90%", "90%", "90%", "60%", "60%"]}
-        placeholder=" 8.8.8.8
-                    1.1.1.1
-                    192.168.1.1"
+        placeholder="8.8.8.8&#10;1.1.1.1&#10;192.168.1.1"
       />
       {/* Check Location button */}
       <Flex
