@@ -41,7 +41,7 @@ const CustomerLove = () => {
         m="auto"
         mt="34px"
       >
-        {customersFeedback.map((el, i) => {
+        {customersFeedback.map((el) => {
           return (
             <Flex
               flexDir={"column"}
@@ -50,11 +50,14 @@ const CustomerLove = () => {
               background={"rgba(30, 30, 30, 0.01)"}
               borderRadius="5px"
               border="1px solid rgba(22, 209, 19, 0.5)"
+              key={el.id}
+              w="auto"
+              boxSizing="borderbox"
             >
               <Flex
                 mb={["13px", "13px", "19.1px", "19.1px", "19.1px"]}
                 flexDir={"row"}
-                w="25%"
+                w="50%"
                 justifyContent={"space-between"}
               >
                 <Icon
@@ -88,7 +91,7 @@ const CustomerLove = () => {
                 fontWeight={"400"}
                 opacity="0.8"
                 letterSpacing={"-0.02em"}
-                fontSize={["14px", "14px", "14px", "15px", "15px"]}
+                fontSize={["12px", "14px", "14px", "15px", "15px"]}
                 w={["260px", "260px", "305px", "95%", "95%"]}
                 lineHeight={["15.5px", "15.5px", "22px", "20px", "20px"]}
                 mb={["9px", "9px", "12px", "12px", "12px"]}

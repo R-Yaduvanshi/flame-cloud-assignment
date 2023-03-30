@@ -4,12 +4,13 @@ import lock from "../assets/lock.svg";
 import square from "../assets/3square.svg";
 import dollar from "../assets/dollar-square.svg";
 import security from "../assets/security-safe.svg";
+
 const Landing4boxes = () => {
   return (
     <SimpleGrid
       columns={[2, 2, 2, 3, 4]}
       spacing={["12.6px", "12.6px", "16.6px", "16.6px", "16.6px"]}
-      w="80%"
+      w={["90%", "90%", "90%", "80%", "80%"]}
       m="auto"
       mb="138.6px"
     >
