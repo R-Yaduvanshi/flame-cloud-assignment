@@ -1,10 +1,10 @@
-import { Box, Container, Divider, Flex, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import { Divider, Flex, Image, Text } from "@chakra-ui/react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import downIcon from "../assets/Icon_down.svg";
 import discord from "../assets/discord_logo.svg";
-import menu from "../assets/menu.svg";
-import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -12,180 +12,166 @@ const Navbar = () => {
     navigate(route);
   };
   return (
-    <Box w="100%">
-      <Container
-        display="flex"
-        maxW="85%"
-        justifyContent="space-evenly"
-        borderBottom="1px"
+    <Flex w="100%" pos="fixed" top="0" left="0" bg="#FFFFFF" zIndex={"1000"}>
+      <Flex
+        w={"80%"}
+        m="auto"
+        flexDir={"row"}
+        alignItems="center"
+        justifyContent={"space-between"}
+        borderBottom="1px solid #D9D8D6"
+        py="20px"
       >
         {/* Company name and logo container */}
-        <Flex gap="9.26px" justifyContent="center" alignItems="center">
+        <Flex flexDir={"row"} cursor="pointer">
           <Image
             src={logo}
-            alt="company logo"
-            h={["28.25px", "53.25px", "53.25px", "25.06px", "25.06px"]}
+            alt="Logo"
+            mr="8.76px"
             onClick={() => handleRoute("/")}
           />
           <Text
-            color="#111822"
-            fontStyle="normal"
-            fontWeight="600"
-            fontSize={["25.2379px", "25.2379px", "25.2379px", "26px", "26px"]}
-            lineHeight={["31.2379px", "55.2379px", "55.2379px", "31px", "31px"]}
-            letterSpacing="-0.02em"
+            color={"#111822"}
+            fontSize={["16px", "16px", "20px", "20px", "20px"]}
+            fontWeight={"600"}
+            lineHeight="31px"
             onClick={() => handleRoute("/")}
           >
             CreativeProxies
           </Text>
         </Flex>
+
         {/* links container */}
         <Flex
-          justifyContent="center"
+          flexDir={"row"}
           alignItems="center"
-          gap="30px"
+          justifyContent={"space-between"}
           display={["none", "none", "none", "flex", "flex"]}
         >
-          <Text
-            color="#111822"
-            textAlign="center"
-            fontStyle="normal"
-            fontWeight="400"
-            fontSize="16px"
-            lineHeight="19px"
-            letterSpacing="-0.02em"
-          >
-            Pricing
-          </Text>
-          <Flex justifyContent="center" alignItems="center" gap="8px">
+          <Flex mr={["130px", "130px", "130px", "10px", "120px"]}>
             <Text
-              color="#111822"
-              textAlign="center"
-              fontStyle="normal"
-              fontWeight="400"
-              fontSize="16px"
-              lineHeight="19px"
-              letterSpacing="-0.02em"
+              letterSpacing={"-0.02em"}
+              color={"#111822"}
+              fontSize="15px"
+              mr={["30px", "30px", "30px", "20px", "25px"]}
+              fontWeight={"400"}
+              lineHeight="19.2px"
             >
-              Explore Tools
+              Pricing
             </Text>
-            <Image
-              src={downIcon}
-              color="#111822"
-              w="9.5px"
-              h="5.5px"
-              alt="down icon"
-            />
-          </Flex>
-          <Flex justifyContent="center" alignItems="center" gap="8px">
+            <Flex
+              flexDir={"row"}
+              alignItems="center"
+              mr={["30px", "30px", "30px", "20px", "25px"]}
+            >
+              <Text
+                letterSpacing={"-0.02em"}
+                color={"#111822"}
+                fontSize="15px"
+                mr="5px"
+                fontWeight={"400"}
+                lineHeight="19.2px"
+              >
+                Explore Tools
+              </Text>
+              <Image
+                src={downIcon}
+                color="#111822"
+                w="9.5px"
+                h="5.5px"
+                alt="down icon"
+              />
+            </Flex>
+            <Flex
+              flexDir={"row"}
+              alignItems="center"
+              mr={["30px", "30px", "30px", "20px", "25px"]}
+            >
+              <Text
+                color={"#111822"}
+                fontSize="15px"
+                mr="5px"
+                fontWeight={"400"}
+                lineHeight="19.2px"
+              >
+                Resources
+              </Text>
+              <Image
+                src={downIcon}
+                color="#111822"
+                w="9.5px"
+                h="5.5px"
+                alt="down icon"
+              />
+            </Flex>
             <Text
-              color="#111822"
-              textAlign="center"
-              fontStyle="normal"
-              fontWeight="400"
-              fontSize="16px"
-              lineHeight="19px"
-              letterSpacing="-0.02em"
+              mr={["30px", "30px", "30px", "20px", "25px"]}
+              color={"#111822"}
+              fontSize="13px"
+              fontWeight={"400"}
+              lineHeight="19.2px"
             >
-              Resources
+              FAQs
             </Text>
-            <Image
-              src={downIcon}
-              color="#111822"
-              w="9.5px"
-              h="5.5px"
-              alt="down icon"
-            />
+            <Text
+              color={"#111822"}
+              fontSize="15px"
+              fontWeight={"400"}
+              lineHeight="19.2px"
+            >
+              Blogs
+            </Text>
           </Flex>
-          <Text
-            color="#111822"
-            textAlign="center"
-            fontStyle="normal"
-            fontWeight="400"
-            fontSize="16px"
-            lineHeight="19px"
-            letterSpacing="-0.02em"
+          <Flex
+            flexDir={"row"}
+            alignItems="center"
+            display={["none", "none", "none", "none", "flex"]}
           >
-            FAQs
-          </Text>
-          <Text
-            color="#111822"
-            textAlign="center"
-            fontStyle="normal"
-            fontWeight="400"
-            fontSize="16px"
-            lineHeight="19px"
-            letterSpacing="-0.02em"
-          >
-            Blogs
-          </Text>
-        </Flex>
-        {/* Discord container */}
-        <Flex
-          justifyContent="center"
-          alignItems="center"
-          gap="5.67px"
-          display={["none", "none", "none", "flex", "flex"]}
-        >
-          <Image src={discord} alt="discord logo" cursor="pointer" />
-          <Text
-            color="#5865F2"
-            fontStyle="normal"
-            fontWeight="500"
-            fontSize="16px"
-            lineHeight="19px"
-            letterSpacing="-0.02em"
-            cursor="pointer"
-          >
-            Join Discord
-          </Text>
+            <Image src={discord} alt="Logo" mr="5.7px" />
+            <Text
+              color={"#5865F2"}
+              fontSize="15px"
+              fontWeight={"500"}
+              lineHeight="19px"
+            >
+              Join Discord
+            </Text>
+          </Flex>
           <Divider
-            mx={["22px", "22px", "22px", "2px", "22px"]}
+            display={["none", "none", "none", "none", "initial"]}
+            mx={["22px", "22px", "22px", "2px", "18px"]}
             orientation="vertical"
             border="1px"
             borderColor={"#D9D8D6"}
             h="30px"
           />
           <Text
-            color="#111822"
-            textAlign="center"
-            fontStyle="normal"
-            fontWeight="400"
-            fontSize="16px"
-            lineHeight="19px"
-            letterSpacing="-0.02em"
-            cursor="pointer"
+            color={"#111822"}
+            fontSize="15px"
+            fontWeight={"400"}
+            lineHeight="19.2px"
           >
             Login
           </Text>
         </Flex>
         {/* Get Started link div */}
-        <Box
-          display="flex"
-          flexDir="row"
-          gap="5px"
-          p="10px"
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
+        <Flex>
           <Flex
             py="10px"
-            px={["10px", "18.89px", "18.89px", "22px", "22px"]}
+            px={["11px", "11px", "15px", "22px", "22px"]}
             cursor={"pointer"}
             flexDir={"row"}
-            justifyContent="center"
             alignItems="center"
+            justifyContent={"space-between"}
+            onClick={() => handleRoute("/proxy")}
             bg="#077BFF"
             borderRadius={"5px"}
-            onClick={() => handleRoute("/proxy")}
           >
             <Text
-              color={"#FFFFFF"}
-              fontSize={["15.1024px", "29.1024px", "29.1024px", "16px", "16px"]}
-              fontWeight="600"
-              lineHeight={["20px", "35px", "35px", "19px", "19px"]}
-              letterSpacing="-0.02em"
-              //   p="10px"
+              color={"#fff"}
+              fontSize={["15px", "15px", "16px", "16px", "15px"]}
+              fontWeight={"600"}
+              lineHeight="19.2px"
             >
               Get Started
             </Text>
@@ -193,19 +179,21 @@ const Navbar = () => {
 
           {/* Hamburger */}
           <Flex
+            ml="10px"
             display={["flex", "flex", "flex", "none", "none"]}
-            justifyContent="center"
+            flexDir={"row"}
             alignItems="center"
-            background="rgba(7, 123, 255, 0.25)"
-            w="50px"
-            h="50px"
-            borderRadius="8.52px"
+            justifyContent={"space-between"}
+            bg="rgba(7, 123, 255, 0.25)"
+            px="15px"
+            py="7px"
+            borderRadius={"8.52px"}
           >
-            <Image src={menu} alt="menu" w="33.64px" h="24.96px" />
+            <GiHamburgerMenu color="#077BFF" fontSize={"25px"} m="0" />
           </Flex>
-        </Box>
-      </Container>
-    </Box>
+        </Flex>
+      </Flex>
+    </Flex>
   );
 };
 

@@ -12,15 +12,15 @@ const Pricing = () => {
       flexDir={"column"}
       w={["100%", "100%", "90%", "70%", "57%"]}
       m="auto"
-      py={["201px", "201px", "177px", "177px", "177px", "177px"]}
+      py={["100px", "100px", "177px", "177px", "177px", "177px"]}
     >
       <Text
         color="#111822"
         mb="10px"
         fontWeight={"600"}
         textAlign="center"
-        fontSize={["32px", "32px", "36px", "36px", "36px"]}
-        lineHeight={["23.2px", "24.2px", "43.2px", "43.2px", "43.2px"]}
+        fontSize={["30px", "30px", "36px", "36px", "36px"]}
+        lineHeight={["21.2px", "24.2px", "43.2px", "43.2px", "43.2px"]}
       >
         You choose, we <span style={{ color: "#077BFF" }}>Deliver!</span>
       </Text>
@@ -28,9 +28,9 @@ const Pricing = () => {
         color="#111822"
         opacity="0.5"
         fontWeight={"500"}
-        w={["85%", "85%", "70%", "62%", "62%"]}
+        w={["80%", "80%", "70%", "62%", "62%"]}
         textAlign="center"
-        fontSize={["15px", "15px", "18px", "18px", "18px"]}
+        fontSize={["14px", "14px", "18px", "18px", "18px"]}
         m="auto"
         lineHeight={"21.2px"}
       >
@@ -38,22 +38,20 @@ const Pricing = () => {
         sit amet mollis molestie.
       </Text>
       <Flex
-        flexDir={["column", "column", "column", "row", "row"]}
+        flexDir={["column", "column", "row", "row", "row"]}
         w="100%"
         alignItems={"stretch"}
-        justifyContent={"space-between"}
         mt="99px"
-        gap="15px"
       >
-        {/* Ist Pricing */}
+        {/* Ist Pricing Container */}
         <Flex
           flexDirection={"column"}
-          w={["70%", "70%", "49%", "49%", "49%"]}
+          w={["65%", "65%", "49%", "45%", "45%"]}
           m="auto"
           mb={["50px", "50px", "0px", "0px", "0px"]}
           mt={["0px", "0px", "0px", "0px", "0px"]}
           h="477px"
-          p={["18px", "18px", "27px", "27px", "27px"]}
+          p={["21px", "23px", "27px", "27px", "27px"]}
           bg="rgba(30, 30, 30, 0.01)"
           border="1px solid rgba(30, 30, 30, 0.1)"
           borderRadius={"5px"}
@@ -89,8 +87,8 @@ const Pricing = () => {
                 fontWeight={"400"}
                 textAlign="left"
                 opacity={"0.8"}
-                fontSize={["15px", "15px", "16px", "16px", "16px"]}
-                lineHeight={"19px"}
+                fontSize={["12px", "12px", "16px", "16px", "16px"]}
+                lineHeight={["15px", "15px", "19px", "19px", "19px"]}
               >
                 FROM
               </Text>
@@ -98,9 +96,9 @@ const Pricing = () => {
                 fontWeight={"500"}
                 mb="4px"
                 textAlign="left"
-                fontSize={["20px", "20px", "20px", "20px", "20px"]}
+                fontSize={["15px", "15px", "20px", "20px", "20px"]}
                 color="#077BFF"
-                lineHeight={"24px"}
+                lineHeight={["18px", "18px", "24px", "24px", "24px"]}
               >
                 $4.75
                 <span style={{ color: "#111822", opacity: "0.75" }}>/day</span>
@@ -109,18 +107,18 @@ const Pricing = () => {
                 fontWeight={"600"}
                 opacity="0.8"
                 textAlign="left"
-                fontSize={["12px", "12px", "12px", "12px", "12px"]}
+                fontSize={["10px", "10px", "12px", "12px", "12px"]}
                 color="#111822"
-                lineHeight={"14.4px"}
+                lineHeight={["10.4px", "10.4px", "14.4px", "14.4px", "14.4px"]}
               >
                 OR
               </Text>
               <Text
                 fontWeight={"500"}
                 textAlign="left"
-                fontSize={["20px", "20px", "20px", "20px", "20px"]}
+                fontSize={["15px", "15px", "20px", "20px", "20px"]}
                 color="#077BFF"
-                lineHeight={"24px"}
+                lineHeight={["18px", "18px", "24px", "24px", "24px"]}
               >
                 $116.75
                 <span style={{ color: "#111822", opacity: "0.75" }}>/mo</span>
@@ -133,7 +131,7 @@ const Pricing = () => {
             fontWeight={"400"}
             textAlign="left"
             opacity={"0.5"}
-            fontSize={["15px", "15px", "16px", "16px", "16px"]}
+            fontSize={["13px", "13px", "16px", "16px", "16px"]}
             lineHeight={"19px"}
             mb="10px"
           >
@@ -147,7 +145,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               100 Threads
@@ -161,7 +159,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Dedicated IP Pool
@@ -175,7 +173,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Residential Proxy
@@ -189,7 +187,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Unlimited Bandwidth
@@ -203,7 +201,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Worldwide Locations
@@ -217,7 +215,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               40 GBps
@@ -246,13 +244,13 @@ const Pricing = () => {
             <RiArrowRightLine color="#fff" fontWeight={"600"} fontSize="25px" />
           </Flex>
         </Flex>
-        {/* 2nd Pricing */}
+        {/* 2nd Pricing Container */}
         <Flex
           pos="relative"
           flexDirection={"column"}
-          w={["70%", "70%", "49%", "49%", "49%"]}
+          w={["65%", "65%", "49%", "49%", "49%"]}
           m="auto"
-          p={["15px", "15px", "27px", "27px", "27px"]}
+          p={["23px", "23px", "27px", "27px", "27px"]}
           bg="rgba(22, 209, 19, 0.1)"
           h="525px"
           border="1px solid #16D113"
@@ -304,8 +302,8 @@ const Pricing = () => {
                 fontWeight={"400"}
                 textAlign="left"
                 opacity={"0.8"}
-                fontSize={["15px", "15px", "16px", "16px", "16px"]}
-                lineHeight={"19px"}
+                fontSize={["12px", "12px", "16px", "16px", "16px"]}
+                lineHeight={["15px", "15px", "19px", "19px", "19px"]}
               >
                 FROM
               </Text>
@@ -313,9 +311,9 @@ const Pricing = () => {
                 fontWeight={"500"}
                 mb="4px"
                 textAlign="left"
-                fontSize={["20px", "20px", "20px", "20px", "20px"]}
+                fontSize={["15px", "15px", "20px", "20px", "20px"]}
                 color="#16D113"
-                lineHeight={"24px"}
+                lineHeight={["18px", "18px", "24px", "24px", "24px"]}
               >
                 $4.75
                 <span style={{ color: "#111822", opacity: "0.75" }}>/day</span>
@@ -324,18 +322,18 @@ const Pricing = () => {
                 fontWeight={"600"}
                 opacity="0.8"
                 textAlign="left"
-                fontSize={["12px", "12px", "12px", "12px", "12px"]}
+                fontSize={["10px", "10px", "12px", "12px", "12px"]}
                 color="#111822"
-                lineHeight={"14.4px"}
+                lineHeight={["10.4px", "10.4px", "14.4px", "14.4px", "14.4px"]}
               >
                 OR
               </Text>
               <Text
                 fontWeight={"500"}
                 textAlign="left"
-                fontSize={["20px", "20px", "20px", "20px", "20px"]}
+                fontSize={["15px", "15px", "20px", "20px", "20px"]}
                 color="#16D113"
-                lineHeight={"24px"}
+                lineHeight={["18px", "18px", "24px", "24px", "24px"]}
               >
                 $116.75
                 <span style={{ color: "#111822", opacity: "0.75" }}>/mo</span>
@@ -348,7 +346,7 @@ const Pricing = () => {
             fontWeight={"400"}
             textAlign="left"
             opacity={"0.5"}
-            fontSize={["15px", "15px", "16px", "16px", "16px"]}
+            fontSize={["13px", "13px", "16px", "16px", "16px"]}
             lineHeight={"19px"}
             mb="10px"
           >
@@ -362,7 +360,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               100 Threads
@@ -376,7 +374,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Dedicated IP Pool
@@ -390,7 +388,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Residential Proxy
@@ -404,7 +402,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Unlimited Bandwidth
@@ -418,7 +416,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Worldwide Locations
@@ -432,7 +430,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Dedicated Subnets
@@ -446,7 +444,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               1 Octilion IPS
@@ -460,7 +458,7 @@ const Pricing = () => {
               fontWeight={"400"}
               textAlign="left"
               opacity={"0.8"}
-              fontSize={["15px", "15px", "16px", "16px", "16px"]}
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
               lineHeight={"19px"}
             >
               Septiltion per Location
@@ -490,28 +488,34 @@ const Pricing = () => {
           </Flex>
         </Flex>
       </Flex>
+      {/* Third Pricing Container */}
       <Flex
         flexDir={"row"}
         justifyContent="space-between"
-        w={["85%", "85%", "100%", "100%", "100%"]}
+        w={["85%", "85%", "100%", "98%", "98%"]}
         m="auto"
         border="1px solid rgba(30, 30, 30, 0.1)"
         mt="22px"
-        py="22px"
+        py={["12px", "12px", "22px", "22px", "22px", "22px"]}
         pr={["12px", "12px", "123px", "123px", "123px"]}
         pl={["14px", "14px", "28px", "28px", "28px"]}
         borderRadius={"5px"}
         background={"rgba(30, 30, 30, 0.01)"}
       >
         <Flex flexDir={"column"}>
-          <Image src={icon3} mb="8px" w="40px" h="40px" />
+          <Image
+            src={icon3}
+            mb="8px"
+            w={["30px", "30px", "40px", "40px", "40px", "40px"]}
+            h={["30px", "30px", "40px", "40px", "40px", "40px"]}
+          />
           <Text
             color="#111822"
             mb="8px"
             fontWeight={"600"}
             textAlign="left"
-            fontSize={["15px", "15px", "20px", "20px", "20px"]}
-            lineHeight={"24px"}
+            fontSize={["13px", "13px", "20px", "20px", "20px"]}
+            lineHeight={["18px", "18px", "24px", "24px", "24px"]}
           >
             Become a Reseller
           </Text>
@@ -520,8 +524,8 @@ const Pricing = () => {
             fontWeight={"400"}
             textAlign="left"
             opacity={"0.5"}
-            fontSize={["12px", "12px", "16px", "16px", "16px"]}
-            lineHeight={"19px"}
+            fontSize={["11px", "11px", "16px", "16px", "16px"]}
+            lineHeight={["14px", "14px", "19px", "19px", "19px"]}
           >
             200+ Happy Resellers
           </Text>
@@ -540,11 +544,11 @@ const Pricing = () => {
           </Text>
           <Flex flexDir={"row"} mb="8px">
             <BsCheckLg
-              fontSize={["8px", "18px", "12px", "12px", "12px"]}
+              fontSize={["2px", "2px", "12px", "12px", "12px"]}
               color="#077BFF"
             />
             <Text
-              ml={["3px", "3px", "6px", "6px", "6px"]}
+              ml={["1px", "1px", "6px", "6px", "6px"]}
               color="#111822"
               fontWeight={"400"}
               textAlign="left"
@@ -557,11 +561,11 @@ const Pricing = () => {
           </Flex>
           <Flex flexDir={"row"} mb="8px">
             <BsCheckLg
-              fontSize={["8px", "18px", "12px", "12px", "12px"]}
+              fontSize={["2px", "2px", "12px", "12px", "12px"]}
               color="#077BFF"
             />
             <Text
-              ml={["3px", "3px", "6px", "6px", "6px"]}
+              ml={["1px", "1px", "6px", "6px", "6px"]}
               color="#111822"
               fontWeight={"400"}
               textAlign="left"
@@ -574,11 +578,11 @@ const Pricing = () => {
           </Flex>
           <Flex flexDir={"row"} mb="8px">
             <BsCheckLg
-              fontSize={["8px", "18px", "12px", "12px", "12px"]}
+              fontSize={["2px", "2px", "12px", "12px", "12px"]}
               color="#077BFF"
             />
             <Text
-              ml={["3px", "3px", "6px", "6px", "6px"]}
+              ml={["1px", "1px", "6px", "6px", "6px"]}
               color="#111822"
               fontWeight={"400"}
               textAlign="left"
@@ -604,11 +608,11 @@ const Pricing = () => {
           </Text>
           <Flex flexDir={"row"} mb="8px">
             <BsCheckLg
-              fontSize={["8px", "18px", "12px", "12px", "12px"]}
+              fontSize={["2px", "2px", "12px", "12px", "12px"]}
               color="#077BFF"
             />
             <Text
-              ml={["3px", "3px", "6px", "6px", "6px"]}
+              ml={["1px", "1px", "6px", "6px", "6px"]}
               color="#111822"
               fontWeight={"400"}
               textAlign="left"
@@ -621,11 +625,11 @@ const Pricing = () => {
           </Flex>
           <Flex flexDir={"row"} mb="8px">
             <BsCheckLg
-              fontSize={["8px", "18px", "12px", "12px", "12px"]}
+              fontSize={["2px", "2px", "12px", "12px", "12px"]}
               color="#077BFF"
             />
             <Text
-              ml={["3px", "3px", "6px", "6px", "6px"]}
+              ml={["1px", "1px", "6px", "6px", "6px"]}
               color="#111822"
               fontWeight={"400"}
               textAlign="left"

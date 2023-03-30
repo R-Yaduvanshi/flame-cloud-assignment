@@ -1,4 +1,4 @@
-import { Container, Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
+import { Flex, Image, SimpleGrid, Text } from "@chakra-ui/react";
 import React from "react";
 import Logo from "../assets/logo.svg";
 import Discord from "../assets/discord_logo.svg";
@@ -6,28 +6,32 @@ import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const navigate = useNavigate();
-  const handleNavigation = (route) => {
-    navigate(`/${route}`);
+  const handleNavigate = (route) => {
+    navigate(route);
   };
   return (
-    <Container maxW="85%">
+    <Flex w="100%">
       <Flex
-        w={"100%"}
+        w={["80%", "80%", "100%", "80%", "80%"]}
         flexDir={["column", "column", "column", "row", "row"]}
-        px={["5", "5", "9", "9", "9"]}
         py="40px"
         m="auto"
         borderTop="1px solid #D9D8D6"
+        justifyContent="space-between"
       >
         {/* left side */}
         <Flex
           flexDir={["row", "row", "row", "column", "column"]}
-          w={["95%", "95%", "95%", "23%", "16%"]}
-          mr={["300px", "300px", "300px", "160px", "300px"]}
+          w={["95%", "95%", "95%", "70%", "16%"]}
+          mr={["300px", "300px", "300px", "0px", "0px"]}
           justifyContent="space-between"
         >
           <Flex flexDir={"column"} w={["48%", "48%", "30%", "100%", "100%"]}>
-            <Flex flexDir={"row"} cursor="pointer">
+            <Flex
+              flexDir={"row"}
+              onClick={() => handleNavigate("/")}
+              cursor="pointer"
+            >
               <Image src={Logo} alt="Logo" mr="2px" />
               <Text
                 color={"#111822"}
@@ -43,6 +47,7 @@ const Footer = () => {
               mt="6px"
               ml="10px"
               color={"#969493"}
+              w={["100%", "100%", "100%", "100%", "100%"]}
               fontSize={["11px", "11px", "11px", "12px", "12px"]}
               fontWeight={"400"}
               lineHeight="16.8px"
@@ -86,9 +91,10 @@ const Footer = () => {
         {/* Right Side */}
         <SimpleGrid
           columns={3}
-          spacing={["20px", "20px", "20px", "40px", "100px"]}
+          spacing={["20px", "20px", "20px", "40px", "50px"]}
           mt={["20px", "20px", "20px", "0px", "0px"]}
           ml={["7px", "7px", "7px", "0px", "0px"]}
+          w={["95%", "95%", "95%", "70%", "70%"]}
         >
           <Flex flexDir={"column"}>
             <Text
@@ -106,7 +112,6 @@ const Footer = () => {
               fontSize={["12px", "12px", "16px", "16px", "16px"]}
               fontWeight={"400"}
               lineHeight="19.2px"
-              w="180px"
             >
               Proxy Location Checker
             </Text>
@@ -116,7 +121,6 @@ const Footer = () => {
               fontSize={["12px", "12px", "16px", "16px", "16px"]}
               fontWeight={"400"}
               lineHeight="19.2px"
-              w="180px"
             >
               IPv6 Comptability
             </Text>
@@ -164,7 +168,6 @@ const Footer = () => {
               fontSize={["12px", "12px", "16px", "16px", "16px"]}
               fontWeight={"400"}
               lineHeight="19.2px"
-              w="180px"
             >
               Network Information
             </Text>
@@ -203,7 +206,6 @@ const Footer = () => {
               fontSize={["12px", "12px", "16px", "16px", "16px"]}
               fontWeight={"400"}
               lineHeight="19.2px"
-              w="180px"
             >
               Terms of Service
             </Text>
@@ -219,7 +221,7 @@ const Footer = () => {
           </Flex>
         </SimpleGrid>
       </Flex>
-    </Container>
+    </Flex>
   );
 };
 

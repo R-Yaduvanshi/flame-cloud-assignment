@@ -1,7 +1,7 @@
 import {
-  Box,
   Container,
   Flex,
+  Highlight,
   Image,
   Table,
   TableContainer,
@@ -19,48 +19,49 @@ import arrow from "../assets/rightArrow.svg";
 const ProxyLocationPage = () => {
   return (
     <Container maxW="60%" mt="95px" mb="99px">
-      <Text
-        fontStyle={"normal"}
-        fontWeight={"600"}
-        fontSize={["20.339px", "20.339px", "20.339px", "16px", "16px"]}
-        lineHeight={["24px", "24px", "24px", "19px", "19px"]}
-        color={"#111822"}
-        opacity={"0.5"}
-        w="100%"
-        textAlign={"center"}
-      >
-        PROXY LOCATION CHECKER
-      </Text>
-      <Text
-        fontStyle={"normal"}
-        fontWeight={"600"}
-        fontSize={["20.339px", "20.339px", "20.339px", "56px", "56px"]}
-        lineHeight={["24px", "24px", "24px", "67px", "67px"]}
-        color={"#111822"}
-        w="100%"
-        textAlign={"center"}
-      >
-        Check Locations of all your Proxies{" "}
-        <span style={{ color: "#077BFF" }}>Free</span> of Cost
-      </Text>
-      <Container
-        maxW="70%"
-        mb={["51.03px", "51.03px", "51.03px", "42px", "42px"]}
+      <Flex
+        flexDir={"column"}
+        pb="42px"
+        w={["80%", "80%", "85%", "75%", "60%"]}
+        m="auto"
+        mt="80px"
+        pt="95px"
+        justifyContent="center"
       >
         <Text
-          fontStyle={"normal"}
-          fontWeight={"500"}
-          fontSize={["20.339px", "20.339px", "20.339px", "22px", "22px"]}
-          lineHeight={["24px", "24px", "24px", "26px", "26px"]}
+          fontWeight={"600"}
+          fontSize={["13px", "13px", "16px", "16px", "16px"]}
+          opacity="0.5"
           color={"#111822"}
-          opacity={"0.5"}
-          w="100%"
           textAlign={"center"}
+        >
+          PROXY LOCATION CHECKER
+        </Text>
+        <Text
+          color="#111822"
+          fontWeight={"600"}
+          mb={["14px", "14px", "20px", "20px", "20px"]}
+          fontSize={["26px", "26px", "46px", "56px", "56px"]}
+          lineHeight={["35.2px", "35.2px", "57.2px", "67.2px", "67.2px"]}
+          textAlign={"center"}
+        >
+          Check Locations of all your{" "}
+          <span style={{ color: "#077BFF" }}>Proxies</span> Free of Cost
+        </Text>
+        <Text
+          fontWeight={"600"}
+          textAlign="center"
+          w={["80%", "80%", "85%", "80%", "65%"]}
+          m="auto"
+          opacity="0.5"
+          fontSize={["12px", "12px", "22px", "22px", "22px"]}
+          color={"#111822"}
+          lineHeight={["15.4px", "15.4px", "26.4px", "26.4px", "26.4px"]}
         >
           To Check location, enter the address or proxies you want to check (1
           IP Per line)
         </Text>
-      </Container>
+      </Flex>
       {/* Check Location section text area */}
       <Textarea
         placeholder=" 8.8.8.8
@@ -69,36 +70,47 @@ const ProxyLocationPage = () => {
       />
       {/* Check Location button */}
       <Flex
-        justifyContent={"space-between"}
-        alignItems={"center"}
-        mt="21px"
-        mb="41px"
+        flexDir={["column", "column", "row", "row", "row"]}
+        justifyContent="space-between"
+        mb={["22.33px", "22.33px", "22.33px", "51px", "51px"]}
+        mt={["42.6px", "42.6px", "42.6px", "21px", "21px"]}
       >
         <Flex
-          flexDir={"row"}
-          w={"30%"}
-          bg="#077BFF"
-          justifyContent={"center"}
-          py="12.5px"
-          alignItems={"center"}
           borderRadius={"5px"}
-          cursor={"pointer"}
+          w={"200px"}
+          bg="#077BFF"
+          alignItems={"center"}
+          justifyContent="center"
+          py="10px"
+          mb={["10px", "10px", "0px", "0px", "0px"]}
         >
           <Text
-            fontWeight={"600"}
-            fontSize="16px"
-            color={"#fff"}
-            mr="5px"
-            lineHeight={"19px"}
+            color="#FFFFFF"
+            fontSize={["15px", "15px", "16px", "16px", "16px"]}
+            fontWeight="600"
+            lineHeight={"19.2px"}
           >
             Check Location
           </Text>
         </Flex>
-        <Text w="30%" fontSize={"14px"} lineHeight={"17px"} opacity={"0.5"}>
-          By using our tool, you agree our{" "}
-          <span style={{ textDecoration: "underline" }}>Terms of Service</span>{" "}
-          and{" "}
-          <span style={{ textDecoration: "underline" }}>Privacy Policy</span>
+        <Text
+          color="#111822"
+          w={["100%", "100%", "225px", "225px", "225px"]}
+          opacity={"0.5"}
+          fontSize={["12px", "12px", "14px", "14px", "14px"]}
+          fontWeight="400"
+          lineHeight={"16.8px"}
+        >
+          <Highlight
+            query={["Terms of Service", "Privacy Policy"]}
+            styles={{
+              textDecoration: "underline",
+              textDecorationColor: "#111822",
+              textDecorationThickness: 0.5,
+            }}
+          >
+            By using our tool, you agree our Terms of Service and Privacy Policy
+          </Highlight>
         </Text>
       </Flex>
       <Text
@@ -118,9 +130,12 @@ const ProxyLocationPage = () => {
         borderRadius={"5px"}
         mb="40px"
       >
-        <Table>
-          <Thead background={"rgba(0, 0, 0, 0.1)"}>
-            <Tr borderBottom={"1px"}>
+        <Table size={["sm", "sm", "sm", "lg", "lg"]}>
+          <Thead
+            borderBottom="1px solid rgba(0, 0, 0, 0.25);"
+            background={"rgba(0, 0, 0, 0.1)"}
+          >
+            <Tr>
               <Th>IP</Th>
               <Th>PROXY</Th>
               <Th>CITY</Th>
@@ -133,9 +148,16 @@ const ProxyLocationPage = () => {
                 <Tr
                   key={el.id}
                   color={"#111822"}
+                  fontWeight={"500"}
                   fontStyle={"normal"}
-                  fontSize={"14px"}
-                  lineHeight={"17px"}
+                  fontSize={[
+                    "28.0999px",
+                    "28.0999px",
+                    "28.0999px",
+                    "14px",
+                    "14px",
+                  ]}
+                  lineHeight={["34px", "34px", "34px", "17px", "17px"]}
                 >
                   <Td>{el.ip}</Td>
                   <Td>{el.proxy}</Td>
@@ -147,44 +169,40 @@ const ProxyLocationPage = () => {
           </Tbody>
         </Table>
       </TableContainer>
-      <Container display={"flex"} justifyContent={"space-between"}>
+      <Flex
+        flexDir={"row"}
+        justifyContent="center"
+        alignItems={"center"}
+        mt="40px"
+      >
         <Text
-          fontStyle={"normal"}
-          fontWeight={"500"}
-          fontSize={"24.1285px"}
-          lineHeight={"43px"}
-          color={"#111822"}
+          fontSize={["13px", "13px", "18px", "18px", "18px"]}
+          fontWeight="500"
+          letterSpacing={"-0.02em"}
+          lineHeight={"21.6px"}
+          color="#111822"
         >
           Check out our IPv6 Compatibility Checker
         </Text>
-        <Flex justifyContent={"center"} mb="10px">
-          <Box
-            display={"flex"}
-            justifyContent={"center"}
-            alignItems={"center"}
-            gap="7.75px"
-            cursor={"pointer"}
+        <Flex
+          flexDir={"row"}
+          justifyContent="center"
+          alignItems={"center"}
+          ml={["10px", "10px", "15px", "15px", "15px"]}
+        >
+          <Text
+            color="#077BFF"
+            fontWeight={"500"}
+            mr={["2px", "2px", "5px", "5px", "5px"]}
+            letterSpacing={"-0.02em"}
+            fontSize={["13px", "13px", "18px", "18px", "18px"]}
+            lineHeight={["15.2px", "15.2px", "21.2px", "21.2px", "21.2px"]}
           >
-            <Text
-              color="#077BFF"
-              fontWeight={"500"}
-              //   w={["98%", "98%", "70%", "50%", "40%"]}
-              textAlign="center"
-              fontSize={["15px", "15px", "18px", "18px", "18px"]}
-              m="auto"
-              lineHeight={["15.2px", "15.2px", "22px", "22px", "22px"]}
-            >
-              View Tool
-            </Text>
-            <Image
-              src={arrow}
-              alt="arrow"
-              w={["11.94px", "26.94px", "26.94px", "13px", "13px"]}
-              h={["15.68px", "19.68px", "19.68px", "9.5px", "9.5px"]}
-            />
-          </Box>
+            Veiw Tools
+          </Text>
+          <Image src={arrow} alt="arrow" />
         </Flex>
-      </Container>
+      </Flex>
     </Container>
   );
 };
