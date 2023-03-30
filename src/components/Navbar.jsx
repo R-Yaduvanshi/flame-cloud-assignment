@@ -14,13 +14,13 @@ const Navbar = () => {
   return (
     <Flex w="100%" pos="fixed" top="0" left="0" bg="#FFFFFF" zIndex={"1000"}>
       <Flex
-        w={"80%"}
+        w={["90%", "90%", "80%", "80%", "80%"]}
         m="auto"
         flexDir={"row"}
         alignItems="center"
         justifyContent={"space-between"}
         borderBottom="1px solid #D9D8D6"
-        py="20px"
+        py={["36px", "36px", "36px", "14px", "14px"]}
       >
         {/* Company name and logo container */}
         <Flex flexDir={"row"} cursor="pointer">
