@@ -142,6 +142,28 @@ export const blogData = [
   },
 ];
 
+export const blogDataSmall = [
+  {
+    id: 1,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+  {
+    id: 2,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+  {
+    id: 3,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+  {
+    id: 4,
+    title: "Blog Title appear here",
+    category: "Category name here",
+  },
+];
 export const searchDataResult = [
   {
     id: 1,
