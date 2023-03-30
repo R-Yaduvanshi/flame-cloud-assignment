@@ -12,7 +12,7 @@ const Navbar = () => {
     navigate(route);
   };
   return (
-    <Flex w="100%" pos="fixed" top="0" left="0" bg="#FFFFFF" zIndex={"1000"}>
+    <Flex w="100%" bg="#FFFFFF" zIndex={"1000"}>
       <Flex
         w={["90%", "90%", "80%", "80%", "80%"]}
         m="auto"

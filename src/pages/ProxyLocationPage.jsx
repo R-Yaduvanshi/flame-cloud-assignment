@@ -1,7 +1,9 @@
 import {
+  Box,
   Container,
   Flex,
   Highlight,
+  Icon,
   Image,
   Table,
   TableContainer,
@@ -15,18 +17,25 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { searchDataResult } from "../utils/data";
-import arrow from "../assets/rightArrow.svg";
+import viewtool from "../assets/viewtool.svg";
+import arrow from "../assets/arrowright.svg";
+import { HiArrowNarrowRight } from "react-icons/hi";
 const ProxyLocationPage = () => {
   return (
-    <Container maxW="60%" mt="95px" mb="99px">
+    <Container
+      maxW="100%"
+      marginTop={"77.5px"}
+      display={"flex"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      flexDirection={"column"}
+    >
       <Flex
         flexDir={"column"}
-        pb="42px"
-        w={["80%", "80%", "85%", "75%", "60%"]}
-        m="auto"
-        mt="80px"
-        pt="95px"
+        w={["90%", "90%", "85%", "60%", "60%"]}
         justifyContent="center"
+        alignItems={"center"}
+        mb="51.03px"
       >
         <Text
           fontWeight={"600"}
@@ -64,16 +73,23 @@ const ProxyLocationPage = () => {
       </Flex>
       {/* Check Location section text area */}
       <Textarea
+        mb="42.6px"
+        w={["90%", "90%", "90%", "60%", "60%"]}
         placeholder=" 8.8.8.8
                     1.1.1.1
                     192.168.1.1"
       />
       {/* Check Location button */}
       <Flex
-        flexDir={["column", "column", "row", "row", "row"]}
-        justifyContent="space-between"
-        mb={["22.33px", "22.33px", "22.33px", "51px", "51px"]}
-        mt={["42.6px", "42.6px", "42.6px", "21px", "21px"]}
+        flexDirection={["column", "column", "column", "row", "row"]}
+        w={["90%", "90%", "90%", "60%", "60%"]}
+        justifyContent={[
+          "null",
+          "null",
+          "null",
+          "space-between",
+          "space-between",
+        ]}
       >
         <Flex
           borderRadius={"5px"}
@@ -82,7 +98,7 @@ const ProxyLocationPage = () => {
           alignItems={"center"}
           justifyContent="center"
           py="10px"
-          mb={["10px", "10px", "0px", "0px", "0px"]}
+          mb="25.96px"
         >
           <Text
             color="#FFFFFF"
@@ -95,11 +111,11 @@ const ProxyLocationPage = () => {
         </Flex>
         <Text
           color="#111822"
-          w={["100%", "100%", "225px", "225px", "225px"]}
           opacity={"0.5"}
-          fontSize={["12px", "12px", "14px", "14px", "14px"]}
+          fontSize={["12px", "12px", "14px", "13px", "13px"]}
           fontWeight="400"
           lineHeight={"16.8px"}
+          w={["null", "null", "null", "30%", "30%"]}
         >
           <Highlight
             query={["Terms of Service", "Privacy Policy"]}
@@ -119,7 +135,9 @@ const ProxyLocationPage = () => {
         fontWeight={"500"}
         fontSize={"20px"}
         lineHeight={"24px"}
-        mb="17px"
+        mb="34.61px"
+        mt="22.33px"
+        w={["90%", "90%", "90%", "60%", "60%"]}
       >
         Your Results
       </Text>
@@ -128,7 +146,8 @@ const ProxyLocationPage = () => {
         border={"1px solid rgba(0, 0, 0, 0.25)"}
         background={"rgba(217, 216, 214, 0.05)"}
         borderRadius={"5px"}
-        mb="40px"
+        mb={["40px", "", "80.65px", "", ""]}
+        w={["90%", "90%", "90%", "60%", "60%"]}
       >
         <Table size={["sm", "sm", "sm", "lg", "lg"]}>
           <Thead
@@ -169,38 +188,62 @@ const ProxyLocationPage = () => {
           </Tbody>
         </Table>
       </TableContainer>
+      {/* Large screens */}
       <Flex
-        flexDir={"row"}
-        justifyContent="center"
+        display={["none", "none", "none", "flex", "flex"]}
+        w={["90%", "90%", "90%", "60%", "60%"]}
+        justifyContent={"center"}
         alignItems={"center"}
-        mt="40px"
+        mb="99px"
       >
-        <Text
-          fontSize={["13px", "13px", "18px", "18px", "18px"]}
-          fontWeight="500"
-          letterSpacing={"-0.02em"}
-          lineHeight={"21.6px"}
-          color="#111822"
-        >
-          Check out our IPv6 Compatibility Checker
-        </Text>
-        <Flex
-          flexDir={"row"}
-          justifyContent="center"
-          alignItems={"center"}
-          ml={["10px", "10px", "15px", "15px", "15px"]}
-        >
+        <Flex>
           <Text
-            color="#077BFF"
-            fontWeight={"500"}
-            mr={["2px", "2px", "5px", "5px", "5px"]}
+            fontSize={"18px"}
+            fontWeight="500"
             letterSpacing={"-0.02em"}
-            fontSize={["13px", "13px", "18px", "18px", "18px"]}
-            lineHeight={["15.2px", "15.2px", "21.2px", "21.2px", "21.2px"]}
+            lineHeight={"21px"}
+            color="#111822"
+            mr="15px"
           >
-            Veiw Tools
+            Check out our IPv6 Compatibility Checker
           </Text>
-          <Image src={arrow} alt="arrow" />
+          <Image src={viewtool} />
+        </Flex>
+      </Flex>
+
+      {/* Small and medium screen */}
+      <Flex
+        w={["90%", "90%", "90%", "60%", "60%"]}
+        display={["flex", "flex", "flex", "none", "none"]}
+        justifyContent={"space-between"}
+        mb="117.82px"
+      >
+        <Flex justifyContent={"center"} alignItems={"center"}>
+          <Text
+            fontSize={["13.5px", "15px", "18px", "26px", "36.1285px"]}
+            fontWeight="500"
+            letterSpacing={"-0.02em"}
+            lineHeight={"43px"}
+            color="#111822"
+          >
+            Check out our IPv6 Compatibility Checker
+          </Text>
+        </Flex>
+        <Flex justifyContent={"center"} alignItems={"center"}>
+          <Text
+            fontSize={["13.5px", "15px", "18px", "26px", "36.1285px"]}
+            color={"#077BFF"}
+            fontWeight={"600"}
+            mr="7.75px"
+          >
+            View Tools
+          </Text>
+          <Icon
+            as={HiArrowNarrowRight}
+            color={"#077BFF"}
+            fontWeight={"600"}
+            fontSize={["13.5px", "15px", "18px", "26px", "36.1285px"]}
+          />
         </Flex>
       </Flex>
     </Container>

@@ -11,15 +11,24 @@ import arrow from "../assets/rightArrow.svg";
 import { blogData, blogDataSmall } from "../utils/data";
 const Blogs = () => {
   return (
-    <Flex flexDir={"column"} w="100%" justifyContent="center" mb="120px">
+    <Flex
+      flexDir={"column"}
+      w="100%"
+      justifyContent="center"
+      mb="120px"
+      alignItems={"center"}
+    >
       <Box
         border={"1px solid rgba(30, 30, 30, 0.1)"}
-        w="100%"
-        p="40px"
+        w={["100%", "100%", "100%", "70%", "70%"]}
         bgGradient={
           "linear-gradient(180deg, #F7FAFF 0%, rgba(255, 255, 255, 0) 100%)"
         }
         borderRadius={"5px"}
+        paddingRight={"40px"}
+        paddingLeft={"40px"}
+        paddingTop={"65px"}
+        paddingBottom={"35px"}
       >
         <Text
           fontWeight={"600"}
@@ -79,7 +88,7 @@ const Blogs = () => {
           columns={[2, 2, 2, 3, 3]}
           rowGap={["38px", "38px", "38px", "38px", "38px"]}
           columnGap={["25px", "25px", "25px", "25px", "25px"]}
-          w="70%"
+          w={["70%", "70%", "70%", "100%", "100%"]}
           m="auto"
           // border="1px"
         >
@@ -123,7 +132,7 @@ const Blogs = () => {
           columns={[2, 2, 2, 2, 2]}
           rowGap={["38px", "38px", "38px", "38px", "38px"]}
           columnGap={["25px", "25px", "25px", "25px", "25px"]}
-          w="70%"
+          w="100%"
           m="auto"
         >
           {blogDataSmall.map((el) => {
