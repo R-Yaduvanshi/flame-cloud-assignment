@@ -9,7 +9,7 @@ import Landing4boxes from "../LandPageComponents/Landing4boxes";
 
 const LandingPage = () => {
   return (
-    <Box w="100%">
+    <Box w="100%" border={"2px"}>
       <CreativeProxyBox />
       <Landing4boxes />
       <Feature />

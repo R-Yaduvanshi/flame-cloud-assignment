@@ -1,4 +1,4 @@
-import { Divider, Flex, Text } from "@chakra-ui/react";
+import { Box, Divider, Flex, Text } from "@chakra-ui/react";
 import React from "react";
 import { RiArrowRightLine } from "react-icons/ri";
 import { IoIosStar } from "react-icons/io";
@@ -7,34 +7,42 @@ const CreativeProxyBox = () => {
   return (
     <Flex
       flexDir={"column"}
-      w={["100%", "100%", "85%", "75%", "70%"]}
+      w={["100%", "100%", "100%", "100%", "100%"]}
       m="auto"
-      mt="80px"
+      mt={["100.86px", "100.86px", "95px", "95px", "95px"]}
       pt="95px"
       justifyContent="center"
       px={["5", "5", "9", "9", "9"]}
     >
-      <Text
-        fontWeight={"600"}
-        fontSize={["16px", "16px", "16px", "16px", "16px"]}
-        opacity="0.5"
-        color={"#111822"}
-        textAlign={"center"}
-      >
-        WELCOME TO CREATIVE PROXIES
-      </Text>
-      <Text
-        fontWeight={"600"}
-        mb="20px"
-        color="#111822"
-        fontSize={["33px", "33px", "46px", "56px", "56px"]}
-        lineHeight={["42.2px", "42.2px", "57.2px", "67.2px", "67.2px"]}
-        textAlign={"center"}
-      >
-        We are the <span style={{ color: "#077BFF" }}>Fastest</span> and the{" "}
-        <span style={{ color: "#16D113" }}>Most Reliable</span> Proxy Service
-        since 2020
-      </Text>
+      <Box w="100%" display={"flex"} justifyContent={"center"}>
+        <Text
+          fontWeight={"600"}
+          fontSize={["13px", "13px", "16px", "16px", "16px"]}
+          lineHeight={["21px", "21px", "19px", "19px", "19px"]}
+          opacity="0.5"
+          color={"#111822"}
+          textAlign={"center"}
+          w={["70%"]}
+        >
+          WELCOME TO CREATIVE PROXIES
+        </Text>
+      </Box>
+      <Box w="100%" display={"flex"} justifyContent={"center"}>
+        <Text
+          fontWeight={"600"}
+          mb="20px"
+          color="#111822"
+          fontSize={["33px", "33px", "56px", "56px", "56px"]}
+          lineHeight={["42.2px", "42.2px", "57.2px", "67.2px", "67.2px"]}
+          textAlign={"center"}
+          w={["83%", "83%", "83%", "83%", "60%"]}
+        >
+          We are the <span style={{ color: "#077BFF" }}>Fastest</span> and the{" "}
+          <span style={{ color: "#16D113" }}>Most Reliable</span> Proxy Service
+          since 2020
+        </Text>
+      </Box>
+
       <Text
         fontWeight={"600"}
         textAlign="center"
