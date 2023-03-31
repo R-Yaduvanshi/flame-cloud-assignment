@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <Flex w="100%" bg="#FFFFFF" zIndex={"1000"}>
       <Flex
-        w={["80%", "80%", "80%", "80%", "80%"]}
+        w={["90%", "80%", "80%", "85%", "85%"]}
         m="auto"
         flexDir={"row"}
         alignItems="center"
