@@ -7,12 +7,10 @@ const CreativeProxyBox = () => {
   return (
     <Flex
       flexDir={"column"}
-      w={["100%", "100%", "100%", "100%", "100%"]}
+      w={["100%", "100%", "100%", "75%", "70%"]}
       m="auto"
       mt={["100.86px", "100.86px", "95px", "95px", "95px"]}
-      pt="95px"
       justifyContent="center"
-      px={["5", "5", "9", "9", "9"]}
     >
       <Box w="100%" display={"flex"} justifyContent={"center"}>
         <Text
@@ -35,7 +33,7 @@ const CreativeProxyBox = () => {
           fontSize={["33px", "33px", "56px", "56px", "56px"]}
           lineHeight={["42.2px", "42.2px", "57.2px", "67.2px", "67.2px"]}
           textAlign={"center"}
-          w={["83%", "83%", "83%", "83%", "60%"]}
+          w={["83%", "83%", "83%", "83%", "80%"]}
         >
           We are the <span style={{ color: "#077BFF" }}>Fastest</span> and the{" "}
           <span style={{ color: "#16D113" }}>Most Reliable</span> Proxy Service

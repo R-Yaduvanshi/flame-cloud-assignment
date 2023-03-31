@@ -40,6 +40,7 @@ const Feature = () => {
       <SimpleGrid
         columns={["2", "2", "3", "3", "4"]}
         spacing={["10px", "10px", "16px", "16px", "16px"]}
+        w={["90%", "90%", "90%", "80%", "80%"]}
       >
         {featureData.map((el) => {
           return (
