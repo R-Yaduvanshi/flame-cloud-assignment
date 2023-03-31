@@ -57,7 +57,7 @@ const CustomerLove = () => {
               <Flex
                 mb={["13px", "13px", "19.1px", "19.1px", "19.1px"]}
                 flexDir={"row"}
-                w="50%"
+                w="25%"
                 justifyContent={"space-between"}
               >
                 <Icon
