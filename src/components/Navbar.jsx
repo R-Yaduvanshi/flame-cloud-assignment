@@ -14,27 +14,30 @@ const Navbar = () => {
   return (
     <Flex w="100%" bg="#FFFFFF" zIndex={"1000"}>
       <Flex
-        w={["90%", "90%", "80%", "80%", "80%"]}
+        w={["80%", "80%", "80%", "80%", "80%"]}
         m="auto"
         flexDir={"row"}
         alignItems="center"
         justifyContent={"space-between"}
         borderBottom="1px solid #D9D8D6"
-        py={["36px", "36px", "36px", "14px", "14px"]}
+        pt={["20px", "20px", "20px", "20px", "20px"]}
+        pb={["20px", "20px", "20px", "20px", "20px"]}
       >
         {/* Company name and logo container */}
-        <Flex flexDir={"row"} cursor="pointer">
+        <Flex flexDir={"row"} cursor="pointer" alignItems={"center"}>
           <Image
             src={logo}
             alt="Logo"
-            mr="8.76px"
+            mr={["1.76px", "5.76px", "8.76px", "8.76px", "5.76px"]}
+            w={["30px", "30px", "20px", "20px", "40px"]}
+            h={["30px", "30px", "20px", "20px", "40px"]}
             onClick={() => handleRoute("/")}
           />
           <Text
             color={"#111822"}
-            fontSize={["16px", "16px", "20px", "20px", "20px"]}
+            fontSize={["16px", "16px", "20px", "20px", "24px"]}
             fontWeight={"600"}
-            lineHeight="31px"
+            lineHeight={["31px", "31px", "31px", "31px", "31px"]}
             onClick={() => handleRoute("/")}
           >
             CreativeProxies
@@ -48,7 +51,7 @@ const Navbar = () => {
           justifyContent={"space-between"}
           display={["none", "none", "none", "flex", "flex"]}
         >
-          <Flex mr={["130px", "130px", "130px", "10px", "120px"]}>
+          <Flex mr={["130px", "130px", "130px", "100px", "120px"]}>
             <Text
               letterSpacing={"-0.02em"}
               color={"#111822"}
@@ -157,8 +160,8 @@ const Navbar = () => {
         {/* Get Started link div */}
         <Flex>
           <Flex
-            py="10px"
-            px={["11px", "11px", "15px", "22px", "22px"]}
+            py={["10px", "10px", "6px", "6px", "12px"]}
+            px={["12px", "12px", "15px", "22px", "22px"]}
             cursor={"pointer"}
             flexDir={"row"}
             alignItems="center"
@@ -169,9 +172,9 @@ const Navbar = () => {
           >
             <Text
               color={"#fff"}
-              fontSize={["15px", "15px", "16px", "16px", "15px"]}
-              fontWeight={"600"}
-              lineHeight="19.2px"
+              fontSize={["13px", "13px", "16px", "16px", "16px"]}
+              fontWeight={["400", "400", "600", "600", "600"]}
+              lineHeight={["15.2px", "15.2px", "19.2px", "19.2px", "19.2px"]}
             >
               Get Started
             </Text>
@@ -179,17 +182,17 @@ const Navbar = () => {
 
           {/* Hamburger */}
           <Flex
-            ml="10px"
+            ml="6px"
             display={["flex", "flex", "flex", "none", "none"]}
             flexDir={"row"}
             alignItems="center"
             justifyContent={"space-between"}
             bg="rgba(7, 123, 255, 0.25)"
-            px="15px"
+            px="8px"
             py="7px"
-            borderRadius={"8.52px"}
+            borderRadius={"5px"}
           >
-            <GiHamburgerMenu color="#077BFF" fontSize={"25px"} m="0" />
+            <GiHamburgerMenu color="#077BFF" fontSize={"17px"} m="0" />
           </Flex>
         </Flex>
       </Flex>

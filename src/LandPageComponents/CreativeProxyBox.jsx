@@ -67,6 +67,7 @@ const CreativeProxyBox = () => {
         m="auto"
         mt="20px"
         cursor="pointer"
+        boxShadow={"0px 5px 0px #0566d4"}
       >
         <Text fontWeight={"600"} fontSize="18px" color={"#fff"} mr="5px">
           Get Started
