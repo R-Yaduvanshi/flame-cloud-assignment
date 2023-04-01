@@ -12,33 +12,24 @@ const Navbar = () => {
     navigate(route);
   };
   return (
-    <Flex
-      w="100%"
-      bg="#FFFFFF"
-      zIndex={"1000"}
-      // border="2px solid red"
-    >
+    <Flex w="100%" bg="#FFFFFF" zIndex={"1000"}>
       <Flex
-        w={["90%", "80%", "80%", "85%", "90%"]}
+        w={["90%", "80%", "90%", "85%", "90%"]}
         m="auto"
         flexDir={"row"}
         alignItems="center"
-        // justifyContent={"space-between"}
-        borderBottom="1px solid #D9D8D6"
         pt={["20px", "20px", "20px", "20px", "20px"]}
-        pb={["20px", "20px", "20px", "20px", "20px"]}
-        // border={"2px solid yellow"}
       >
         <Flex
-          // border={"2px solid black"}
           m="auto"
+          pb={["20px", "20px", "20px", "20px", "20px"]}
+          borderBottom="1px solid #D9D8D6"
         >
           {/* Company name and logo container */}
           <Flex
             flexDir={"row"}
             cursor="pointer"
             alignItems={"center"}
-            // border="2px solid green"
             mr="1.9rem"
           >
             <Image
@@ -66,7 +57,6 @@ const Navbar = () => {
             alignItems="center"
             justifyContent={"space-between"}
             display={["none", "none", "none", "flex", "flex"]}
-            // border={"2px solid blue"}
             mr="2rem"
           >
             <Flex mr={["130px", "130px", "130px", "100px", "120px"]}>
@@ -176,9 +166,7 @@ const Navbar = () => {
             </Text>
           </Flex>
           {/* Get Started link div */}
-          <Flex
-          // border="2px solid pink"
-          >
+          <Flex>
             <Flex
               py={["10px", "10px", "6px", "6px", "12px"]}
               px={["12px", "12px", "15px", "22px", "22px"]}
